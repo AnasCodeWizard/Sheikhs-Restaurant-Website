@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheikh's Reservations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style4.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <body style="background-color: black;" class="body">
+        <header class="header">
+            <div class="head">
+                <h1 style="font-family: 'Dancing Script', cursive; font-weight: bolder; font-size: 50px;"><b>Sheikh's</b></h1> 
+            </div>
+        </header>
+        <nav class="navbar" style="background-color: maroon; flex-wrap: wrap;">
+            <div class="container-fluid" style="align-items: center;">
+              <a class="navbar-brand" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="/Untitled-2.png" alt="Logo" style="margin: 0 10px;" width="75vh" height="75vh" class="d-inline-block align-text-top"></a>
+                    <ul style="text-align: center; padding: -50px; margin: 0px 15px;">
+                        <li><a href="./menu.html" target="_blank" rel="noopener noreferrer" class="list">Menu</a></li>
+                        <li><a href="./about.html" target="_blank" rel="noopener noreferrer" class="list">About Us</a></li>
+                        <li><a href="#" class="list">Reservations</a></li>
+                        <li><a href="./signup.html" target="_blank" rel="noopener noreferrer" class="list">Sign Up</a></li>
+                        <li><a href="./login.html" target="_blank" rel="noopener noreferrer" class="list">Log In</a></li>
+                    </ul>
+                    <a href="#"  target="_blank" rel="noopener noreferrer">
+                    <button type="button" style="margin-right: 5px; background-color: white; color: maroon; width: 115px; height: 35px; font-weight: bolder; border-radius: 10px; text-align: center;"></a>Order Online</button></a>
+            </div>
+          </nav>
+
+        <div>
+            <h1 class="heading"><b>Reserve a Table</b></h1> 
+            <p class="paragraph"><i>Secure your spot and book a table for an unforgettable dining experience.</i></p>
+        </div>
+        <br>
+        <form action="/home.html">
+        <div class="container">
+            <div class="box">
+            <label for="name" class="fw-bold">Name:</label>
+            <br>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+            <br>
+            <div class="box">
+            <label for="email" class="fw-bold">Email:</label>
+            <br>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+            <br>
+            <div class="box">
+            <label for="phone" class="fw-bold">Phone:</label>
+            <br>
+            <input type="tel" id="phone" placeholder="Enter your phone no." required>
+        </div>
+        </div>
+            <br>
+        <div class="container">
+            <div class="box">
+            <label for="date" class="fw-bold">Date:</label>
+            <br>
+            <input type="date" id="date" required>
+        </div>
+            <br>
+            <div class="box">
+            <label for="time" class="fw-bold">Time:</label>
+            <br>
+            <input type="time" id="time" required>
+        </div>
+            <br>
+            <div class="box">
+            <label for="guests" class="fw-bold">Number of Guests:</label>
+            <br>
+            <input type="number" id="guests" min="1" required>
+        </div>
+        </div>
+            <br>
+        <div class="btn">
+            <input type="submit" value="Make Reservation" id="reservation" onclick="Reservation();">
+        </div>
+    </form>
+        <br>
+
+        <footer class="bg-dark text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.25); color: white;">
+              © 2023 Copyright:
+              <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Sheikh's.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+</body>
+<script>
+    function Reservation(){
+        let abc=document.getElementById("name").value;
+        let def=document.getElementById("email").value;
+        let ghi=document.getElementById("phone").value;
+        let jkl=document.getElementById("date").value;
+        let mno=document.getElementById("time").value;
+        let pqr=document.getElementById("guests").value;
+
+        localStorage.setItem("name" , abc);
+        localStorage.setItem("email" , def);
+        localStorage.setItem("phone" , ghi);
+        localStorage.setItem("date" , jkl);
+        localStorage.setItem("time" , mno);
+        localStorage.setItem("guests" , pqr);
+
+        alert("Congratulations! Your reservation is confirmed. Get ready to embark on a culinary journey filled with delightful flavors and unforgettable moments. We can't wait to serve you!")
+    }
+
+</script>
+</html>

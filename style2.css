@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background: url(./pexels-marlein-topciu-16010589.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+   
+} 
+.header{
+    margin: 0%;
+    padding: 1px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: black;
+}
+.head{
+    color: maroon;
+    text-align: center;
+    transition: color 1s ease-in-out
+}
+.head:hover{
+    color: white;
+}
+.navbar{
+    background-color: maroon;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    text-align: center;
+    padding: 12px;
+  
+}
+.navbar ul li{
+    display: inline;
+    margin-right: 25px;
+    padding: 45px;
+    text-align: center;
+    align-content: center;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-align: center;  
+    padding: 10px;
+}
+.list{
+    margin: -10px;
+    font-style: normal;
+    font-weight: bolder;
+}
+.list:hover{
+    color: black;
+}
+.container{
+    width: 100%;
+    height: 100%;  
+}
+.container ul li{
+    list-style-type: none;
+}
+.mainHeadings{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: 50px; 
+    color: white;
+    text-align: center;
+    transition: color 1s ease-in-out;
+}
+.mainHeadings:hover{
+    color: black ;
+}
+.headings{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: 35px; 
+    color: white; 
+    transition: color 1s ease-in-out;
+    text-align: center;
+}
+.headings:hover{
+    color: black ;
+}
+.subHeadings{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder; 
+    font-size: 30px; 
+    color: white;  
+    transition: color 1s ease-in-out;
+    text-align: center;
+}
+.subHeadings:hover{
+    color: black ;
+}
